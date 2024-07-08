@@ -1,0 +1,36 @@
+<snippet>
+	<content><![CDATA[
+import java.util.Scanner;
+
+public class ${1:${TM_FILENAME_BASE/(.+)/\u$1/}} {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        
+        // Read the number of test cases
+        int t = sc.nextInt();
+        
+        // Process each test case
+        while(t-- > 0) {
+            int n = sc.nextInt();
+            
+            // Add your logic here to handle each test case
+            // Example: calculate and print the number of goals needed for victory
+            // int goalsNeeded = calculateGoals(n);
+            // System.out.println(goalsNeeded);
+        }
+        
+        sc.close();
+    }
+    
+    // Example method to calculate goals needed for victory
+    // public static int calculateGoals(int n) {
+    //     // Implement your logic here
+    //     return 0; // Placeholder return statement
+    // }
+}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>class</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.java</scope>
+</snippet>

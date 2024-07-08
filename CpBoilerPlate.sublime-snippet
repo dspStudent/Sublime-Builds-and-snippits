@@ -1,0 +1,73 @@
+<snippet>
+	<content><![CDATA[
+import java.io.*;
+import java.util.*;
+public class ${1:${TM_FILENAME/(.*)\\.java/$1/}} {
+    public static BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+
+    public static StringBuilder op=new StringBuilder();
+
+    public static StringTokenizer st;
+
+
+
+    public static void main(String[] args) throws IOException{ 
+        ${1:${TM_FILENAME/(.*)\\.java/$1/}} o=new ${1:${TM_FILENAME/(.*)\\.java/$1/}}();
+        int t = sToInt(br.readLine());
+        while(t-- > 0) {
+            st=nst(br.readLine());
+            op.append("hello").append("\n");
+        }
+        System.out.println(op);
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    public static int[] nextIntA(int n)throws IOException{
+        int a[]=new int[n];
+        st=nst(br.readLine());
+        for(int i=0;i<n;i++){
+            a[i]=sToInt(st.nextToken());
+        }
+        return a;
+    }
+    public static int sToInt(String s){
+        return Integer.parseInt(s);
+    }
+    public static long sToLong(String s){
+        return Long.parseLong(s);
+    }
+    public static int sToInt(char c){
+        return Integer.parseInt(c+"");
+    }
+    public static long sToLong(char c){
+        return Long.parseLong(c+"");
+    }
+    public static StringTokenizer nst(String s){
+        return new StringTokenizer(s);
+    }
+}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>cp</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.java</scope>
+</snippet>
